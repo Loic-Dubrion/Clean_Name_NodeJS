@@ -18,7 +18,8 @@ function processLineByLine() {
     });
   
     rl.on('line', (line) => {
-      let newLine = cleanString(line);
+      const cells = line.split(";");
+      let newLine = cells.map(cleanString).join(";");
       fs.appendFileSync("clean.csv", `${newLine}\n`, "utf8");
     });
   }
