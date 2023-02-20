@@ -1,3 +1,5 @@
+Projet à destination d'une association qui souhaite "nettoyer" son fichier d'adhérent
+
 # Clean String
 Permet de nettoyer un fichier .csv
 
